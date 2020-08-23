@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
-{/*1------------------------------------------------------------------------ */}
-{/*Una forma basica de crear un objeto y reutilisar este componente */}
-{/*const CourseCard = () => {
+/*1------------------------------------------------------------------------ */
+/*Una forma basica de crear un objeto y reutilisar este componente */
+/*const CourseCard = () => {
     
   const ConsultarEdad = edad => edad > 19
   const persona={Nombre:'Julio', Apellido: 'Diaz', Edad:20}
@@ -41,12 +41,12 @@ import { Link } from 'react-router-dom'
   </article>
   </Fragment>
      );
-}*/}
-{/*1------------------------------------------------------------------------ */}
+}*/
+/*1------------------------------------------------------------------------ */
 
-{/*2------------------------------------------------------------------------ */}
-{/*Una forma de utilisar el mismo componente y editar el contenido desde el lugar donde lo llamas con el (props) */}
-{/*const CourseCard = props => (
+/*2------------------------------------------------------------------------ */
+/*Una forma de utilisar el mismo componente y editar el contenido desde el lugar donde lo llamas con el (props) */
+/*const CourseCard = props => (
     <Fragment>
       <article className="card">
         <div className="img-container s-ratio-16-9 s-radius-tr s-radius-tl">
@@ -60,12 +60,12 @@ import { Link } from 'react-router-dom'
         </div>
       </article>
     </Fragment>
-)*/}
-{/*2------------------------------------------------------------------------ */}
+)*/
+/*2------------------------------------------------------------------------ */
 
-{/*3------------------------------------------------------------------------ */}
-{/*Una forma de utilisar el mismo componente y editar el conetnido y lo llamas desde el mismo componente y facil de editable */}
-{/*const CourseCard = ({title,image,price}) => (
+/*3------------------------------------------------------------------------ */
+/*Una forma de utilisar el mismo componente y editar el conetnido y lo llamas desde el mismo componente y facil de editable */
+/*const CourseCard = ({title,image,price}) => (
   <Fragment>
     <article className="card">
       <div className="img-container s-ratio-16-9 s-radius-tr s-radius-tl">
@@ -85,11 +85,11 @@ import { Link } from 'react-router-dom'
       </div>
     </article>
   </Fragment>
-)*/}
- {/*3------------------------------------------------------------------------ */}
+)*/
+ /*3------------------------------------------------------------------------ */
 
- {/*4------------------------------------------------------------------------ */}
-{/*Usamos una forma de editar con el (npm add prop-types) para la edicion del contenido*/}
+ /*4------------------------------------------------------------------------ */
+/*Usamos una forma de editar con el (npm add prop-types) para la edicion del contenido*/
 const CourseCard = ({id,title,image,price,profesor}) => (
   <Fragment>
     <article className="card">
@@ -105,7 +105,7 @@ const CourseCard = ({id,title,image,price,profesor}) => (
           <h3 className="t5 s-mb-2 s-center">{title}</h3>
             <h4 className="t5 s-mb-2 s-center">{profesor}</h4>
           <div className="s-main-center">
-            <a className="button--ghost-alert button--tiny" href="#">{`$ ${price}`}</a>
+            <a className="button--ghost-alert button--tiny" href="http://edteam.com">{`$ ${price}`}</a>
           </div>
       </div>
     </article>
@@ -125,7 +125,7 @@ CourseCard.defaultProps = {
   price: "--",
   profesor: " "
 }
-{/*4------------------------------------------------------------------------ */}
+/*4------------------------------------------------------------------------ */
 
 export default CourseCard;
  

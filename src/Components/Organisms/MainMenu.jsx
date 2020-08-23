@@ -1,6 +1,5 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import { Link , NavLink} from 'react-router-dom'
-import { exact } from 'prop-types';
 import Logo from '../Molecules/Logo';
 
 const MainMenu = () => (

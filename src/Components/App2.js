@@ -1,7 +1,7 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import '../Styles/styles.scss';
 import Form from './Pages/Form'
-import CourseGrid from './Organisms/CourseGrid';
+import Courses from './Pages/Courses';
 //estas importando el enrutamiento para las paginas 
 //usas primero el (npm add react-router-dom)
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
@@ -20,7 +20,7 @@ import Users from './Pages/Users';
         <Fragment>
             <Banner /> 
              <Form name="Nuevo" /> 
-            <CourseGrid />
+            <Courses />
         </Fragment>
      );
 }*/
@@ -38,7 +38,7 @@ const App2 = () => {
                 {/* en el (component) se llama al nombre de componante */}
             <Route path="/" exact component={Home}/>
             <Route path="/cursos/:id"  component={Course}/>
-            <Route path="/cursos"  component={CourseGrid}/>
+            <Route path="/cursos"  component={Courses}/>
             <Route path="/historial/:valor"  component={History}/>
             <Route path="/historial"  component={History}/>
             {/*se llama a la ruta y se pone los (:) como para indicar el id exacto */}
